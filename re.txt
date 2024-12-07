@@ -58,6 +58,7 @@ domanda 1:
 				Il Gaussian Naive Bayes è un metodo molto efficace per la classificazione quando le feature numeriche seguono una distribuzione normale. Nonostante le sue assunzioni semplificative, può essere sorprendentemente preciso e rimane un punto di partenza utile per molti problemi di machine learning.
 
 
+###################################################
 			-PERCETTRONE MULTI-CLASSE:
 				Il percettrone multi-classe è una generalizzazione del percettrone classico per gestire problemi di classificazione con più di due classi. A differenza del percettrone binario, che separa solo due classi con un singolo iperpiano, il percettrone multi-classe utilizza un iperpiano per ogni classe e assegna l’etichetta in base al punteggio (o attivazione) massimo. Vediamo come funziona in dettaglio:
 
@@ -93,7 +94,7 @@ domanda 1:
 				-l'algoritmo si ripete per tutti i dati di training fino a che:
 					-tutti i dati sono classificati correttamente 
 					-oppure viene raggiunto il numero massimo di iterazioni
-
+###################################################
 
 		dubbi:
 			il dataset va ripulito?
