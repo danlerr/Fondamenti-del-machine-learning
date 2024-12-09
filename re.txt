@@ -106,19 +106,30 @@ domanda 2:
 	(boxplot e/o pairplot e matrice di correlazione);
 		alcuni controlli da fare sul dataset:
 		-Verificare la Formattazione dei Dati:
-			Controlla che i dati rispettino il formato atteso. Ad esempio, assicurati che i numeri siano effettivamente numeri, le date siano nel formato corretto e le stringhe siano coerenti. Se trovi valori strani, come una data con un mese “13” o un valore numerico inserito come testo, questi potrebbero indicare errori di registrazione.
+			Controlla che i dati rispettino il formato atteso. Ad esempio, assicurati che i numeri siano effettivamente numeri, le date siano nel formato 
+			corretto e le stringhe siano coerenti. Se trovi valori strani, come una data con un mese “13” o un valore numerico inserito come testo, questi 
+			potrebbero indicare errori di registrazione.
 		-Individuare i Valori Mancanti:
-			Un passo importante è identificare se ci sono valori mancanti in alcune colonne o righe. Ad esempio, se la colonna dell’età ha molti valori vuoti, dovresti chiederti se è un errore o se è accettabile in quel contesto. Spesso i valori mancanti possono essere un sintomo di un problema nel processo di raccolta dati.
+			Un passo importante è identificare se ci sono valori mancanti in alcune colonne o righe. Ad esempio, se la colonna dell’età ha molti valori vuoti, 
+			dovresti chiederti se è un errore o se è accettabile in quel contesto. Spesso i valori mancanti possono essere un sintomo di un problema nel 
+			processo di raccolta dati.
 		-Cercare Valori Anomali o Implausibili:
-			Esamina ogni variabile per verificare che i valori siano plausibili. Per i numeri, ad esempio, controlla che rientrino in un intervallo logico: un’età negativa o superiore a 120 è chiaramente errata. Per i dati categoriali, come il genere o le regioni, verifica che tutte le voci appartengano a un elenco di categorie valide. Errori di battitura o formati diversi (es. “male”, “Male”, “M”) possono compromettere l’analisi.
+			Esamina ogni variabile per verificare che i valori siano plausibili. Per i numeri, ad esempio, controlla che rientrino in un intervallo logico: 
+			un’età negativa o superiore a 120 è chiaramente errata. Per i dati categoriali, come il genere o le regioni, verifica che tutte le voci 
+			appartengano a un elenco di categorie valide. Errori di battitura o formati diversi (es. “male”, “Male”, “M”) possono compromettere l’analisi.
 		-Esaminare la Distribuzione dei Dati:
-			Analizza la distribuzione dei dati per capire se ci sono valori fuori posto. Ad esempio, un picco inaspettato in una distribuzione potrebbe segnalare un errore di registrazione o un caso estremo da indagare. Puoi anche confrontare la distribuzione con aspettative note per individuare anomalie.
+			Analizza la distribuzione dei dati per capire se ci sono valori fuori posto. Ad esempio, un picco inaspettato in una distribuzione potrebbe 
+			segnalare un errore di registrazione o un caso estremo da indagare. Puoi anche confrontare la distribuzione con aspettative note per individuare 
+			anomalie.
 		analisi esplorativa
-		L’analisi esplorativa dei dati (EDA, Exploratory Data Analysis) è il processo iniziale per comprendere e analizzare un dataset in modo approfondito prima di applicare algoritmi di machine learning o modelli statistici. Lo scopo principale è identificare le caratteristiche, i pattern e le anomalie nei dati, valutandone la qualità e l’idoneità per il problema da risolvere.
+		L’analisi esplorativa dei dati (EDA, Exploratory Data Analysis) è il processo iniziale per comprendere e analizzare un dataset in modo approfondito
+		prima di applicare algoritmi di machine learning o modelli statistici. Lo scopo principale è identificare le caratteristiche, i pattern e le anomalie
+		 nei dati, valutandone la qualità e l’idoneità per il problema da risolvere.
 		rappresentazione dei risultati dell'analisi esplorativa del dataset:
 
 		1.Boxplot
-		Il boxplot è uno strumento grafico che rappresenta la distribuzione di una variabile numerica e mette in evidenza i principali parametri statistici, come la mediana, i quartili e gli outlier. È ideale per individuare distribuzioni e valori anomali.
+		Il boxplot è uno strumento grafico che rappresenta la distribuzione di una variabile numerica e mette in evidenza i principali parametri statistici,
+		 come la mediana, i quartili e gli outlier. È ideale per individuare distribuzioni e valori anomali.
 		Elementi del Boxplot:
 
 		•Box centrale: Indica il 50% centrale dei dati (tra il primo quartile, Q1, e il terzo quartile, Q3).
@@ -133,7 +144,8 @@ domanda 2:
 		•Per valutare la simmetria o l’asimmetria della distribuzione.
 
 		2.Pairplot 
-		Il Pairplot è una rappresentazione visiva delle relazioni tra tutte le variabili numeriche di un dataset. Mostra una matrice di scatterplot per ogni coppia di variabile e un istogramma o KDE(Kernel Density Estimation) lungo la diagonale per rappresentare la distribuzione di ogni 
+		Il Pairplot è una rappresentazione visiva delle relazioni tra tutte le variabili numeriche di un dataset. Mostra una matrice di scatterplot per 
+		ogni coppia di variabile e un istogramma o KDE(Kernel Density Estimation) lungo la diagonale per rappresentare la distribuzione di ogni 
 		singola variabile.
 
 		Caratteristiche principali:
