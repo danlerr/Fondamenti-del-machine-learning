@@ -1,7 +1,4 @@
 
-import numpy as np
-import pandas as pd
-from collections import Counter
 
 def euclidean_distance(row1, row2):
     distance = 0.0
