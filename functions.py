@@ -136,4 +136,31 @@ def confusion_matrix(y_true, y_pred):
     
     return matrix, classes
 
+def cross_validate_naive_bayes(X, y, num_folds=5):
+    X_folds, y_folds = k_fold_split(X, y, num_folds)  # Suddivide i dati in fold
+
+    accuracies = []  # Lista per memorizzare le accuratezze per ogni fold
+    for i in range(num_folds):
+        # Usa il fold i-esimo come test set
+        X_test_fold = X_folds[i]
+        y_test_fold = y_folds[i]
+        
+        # Usa tutti gli altri fold come training set
+        X_train_folds = np.concatenate([X_folds[j] for j in range(num_folds) if j != i])
+        y_train_folds = np.concatenate([y_folds[j] for j in range(num_folds) if j != i])
+        
+        # Calcola i parametri (media, varianza e probabilità a priori) per il Naive Bayes
+        parameters = calcola_parametri(X_train_folds, y_train_folds)
+        
+        # Prevedi con Naive Bayes
+        y_pred = predict(X_test_fold, parameters)
+        
+        # Calcola l'accuratezza per questo fold
+        accuracy = calculate_accuracy(y_test_fold, y_pred)
+        accuracies.append(accuracy)
+
+    # Restituisci l'accuratezza media sui fold
+    return np.mean(accuracies)
+
+
 
