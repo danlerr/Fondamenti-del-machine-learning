@@ -1,0 +1,31 @@
+Il Percettrone
+È un modello di apprendimento supervisionato che viene utilizzato per classificare 
+i dati lineari separabili. Il percettrone rappresenta il mattone fondamentale delle reti neurali più complesse.
+Il Percettrone è costituito da un singolo nodo (neurone) con:
+	•	Ingressi: rappresentano le caratteristiche dei dati.
+	•	Pesi: ogni ingresso è moltiplicato per un peso che determina l’importanza della caratteristica.
+	•	Funzione di attivazione: una funzione step che decide se il neurone deve “attivarsi” (classificare un input in una determinata classe).
+	•	Output: una decisione binaria (es. 0 o 1, -1 o +1).
+    L’output è calcolato come segue:
+        #vedere formula su wiki
+        #
+        #
+
+Il percettrone può essere considerato come il più semplice modello di rete neurale feed-forward,
+in quanto gli input alimentano direttamente l'unità di output attraverso connessioni pesate.
+Nel caso in cui gli input e gli output sono dello stesso tipo, è possibile creare reti più complesse unendo più
+percettroni insieme, per esempio usando un gruppo (o strato) di percettroni come input per un secondo gruppo di 
+percettroni, oppure facendo in modo che l'input di ogni percettrone della rete sia dato dall'output di ogni altro
+percettrone (rete fully-connected).
+
+ Per affrontare problemi multiclasse, è necessaria un’estensione del modello.
+ -1. Metodo One-vs-All (OvA)
+ -2. Metodo One-vs-One (OvO)
+
+MLP
+Il Multi-Layer Perceptron (MLP) è una generalizzazione del percettrone. 
+È una rete neurale artificiale composta da più livelli di nodi (neuroni) che includono uno o più strati nascosti.
+Grazie a questi strati, l’MLP può apprendere relazioni non lineari tra i dati.
+
+https://scikit-learn.org/stable/modules/neural_networks_supervised.html
+
